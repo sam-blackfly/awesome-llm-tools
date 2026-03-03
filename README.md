@@ -8,98 +8,35 @@
 
 ## Table of Contents
 
-1. [Pre-Prep & Model Optimization](#1-pre-prep--model-optimization)
-2. [Inference Engines](#2-inference-engines)
-   - [Desktop / Local](#desktop--local)
-   - [Server / Production](#server--production)
-3. [Local Agents](#3-local-agents)
-   - [Coding Agents & IDE Extensions](#coding-agents--ide-extensions)
-   - [Autonomous Agents](#autonomous-agents)
-   - [Audio / Voice Agents](#audio--voice-agents)
-   - [General-Purpose Local Agents](#general-purpose-local-agents)
-4. [Libraries & Frameworks](#4-libraries--frameworks)
-   - [Python](#python)
-   - [JavaScript / TypeScript](#javascript--typescript)
-   - [Java](#java)
-   - [Kotlin](#kotlin)
-   - [Go](#go)
-   - [Rust](#rust)
-5. [Prompt Optimization](#5-prompt-optimization)
-6. [Context Optimization](#6-context-optimization)
-7. [Agent Memory](#7-agent-memory)
-8. [RAG Pipelines](#8-rag-pipelines)
-9. [Vector Databases](#9-vector-databases)
-10. [Fine-Tuning](#10-fine-tuning)
-11. [Miscellaneous](#11-miscellaneous)
+1. [Local Agents](#1-local-agents)
+   1. [Coding Agents & IDE Extensions](#coding-agents--ide-extensions)
+   2. [Autonomous Agents](#autonomous-agents)
+   3. [Audio / Voice Agents](#audio--voice-agents)
+   4. [General-Purpose Local Agents](#general-purpose-local-agents)
+2. [Libraries & Frameworks](#2-libraries--frameworks)
+   1. [Python](#python)
+   2. [JavaScript / TypeScript](#javascript--typescript)
+   3. [Java](#java)
+   4. [Kotlin](#kotlin)
+   5. [Go](#go)
+   6. [Rust](#rust)
+3. [Prompt Optimization](#3-prompt-optimization)
+4. [Context Optimization](#4-context-optimization)
+5. [Agent Memory](#5-agent-memory)
+6. [RAG Pipelines](#6-rag-pipelines)
+7. [Vector Databases](#7-vector-databases)
+8. [Inference Engines](#8-inference-engines)
+   1. [Desktop / Local](#desktop--local)
+   2. [Server / Production](#server--production)
+9. [Fine-Tuning](#9-fine-tuning)
+   1. [Training Frameworks](#training-frameworks)
+   2. [PEFT Methods](#peft-methods-techniques)
+   3. [Data & Alignment Tools](#data--alignment-tools)
+10. [Miscellaneous](#10-miscellaneous)
 
 ---
 
-## 1. Pre-Prep & Model Optimization
-
-Tools for quantization, compression, and preparing models for efficient inference.
-
-| Tool | Description | Stars | License |
-|------|-------------|-------|---------|
-| [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ) | GPTQ Post-Training Quantization for LLMs; 2–4 bit weight quantization | ![Stars](https://img.shields.io/github/stars/AutoGPTQ/AutoGPTQ?style=flat-square) | MIT |
-| [AutoAWQ](https://github.com/casper-hansen/AutoAWQ) | Activation-aware Weight Quantization (AWQ) for 4-bit models | ![Stars](https://img.shields.io/github/stars/casper-hansen/AutoAWQ?style=flat-square) | MIT |
-| [bitsandbytes](https://github.com/bitsandbytes-foundation/bitsandbytes) | 8-bit & 4-bit quantization for PyTorch; enables QLoRA training | ![Stars](https://img.shields.io/github/stars/bitsandbytes-foundation/bitsandbytes?style=flat-square) | MIT |
-| [llm-compressor](https://github.com/vllm-project/llm-compressor) | Hugging Face–native compression toolkit from the vLLM team (SmoothQuant, AWQ, GPTQ) | ![Stars](https://img.shields.io/github/stars/vllm-project/llm-compressor?style=flat-square) | Apache-2.0 |
-| [SmoothQuant](https://github.com/mit-han-lab/smoothquant) | W8A8 quantization by migrating outliers from activations to weights | ![Stars](https://img.shields.io/github/stars/mit-han-lab/smoothquant?style=flat-square) | MIT |
-| [optimum](https://github.com/huggingface/optimum) | Hugging Face toolkit for hardware-accelerated model export and quantization (ONNX, OpenVINO) | ![Stars](https://img.shields.io/github/stars/huggingface/optimum?style=flat-square) | Apache-2.0 |
-| [llmcompressor](https://github.com/neuralmagic/compressed-tensors) | Neural Magic's compressed-tensors format & quantization tools | ![Stars](https://img.shields.io/github/stars/neuralmagic/compressed-tensors?style=flat-square) | Apache-2.0 |
-| [quanto](https://github.com/huggingface/quanto) | PyTorch quantization toolkit supporting W4/W8/A8 and QAT | ![Stars](https://img.shields.io/github/stars/huggingface/quanto?style=flat-square) | Apache-2.0 |
-| [intel/neural-compressor](https://github.com/intel/neural-compressor) | Intel's model compression tool with sparsity, quantization, and pruning | ![Stars](https://img.shields.io/github/stars/intel/neural-compressor?style=flat-square) | Apache-2.0 |
-| [gguf-tools](https://github.com/antirez/gguf-tools) | CLI utilities for inspecting and editing GGUF model files | ![Stars](https://img.shields.io/github/stars/antirez/gguf-tools?style=flat-square) | BSD-2 |
-| [Wanda](https://github.com/locuslab/wanda) | Pruning LLMs by weights and activation norms; removes weights per-output with no retraining | ![Stars](https://img.shields.io/github/stars/locuslab/wanda?style=flat-square) | MIT |
-
----
-
-## 2. Inference Engines
-
-### Desktop / Local
-
-Optimized for personal hardware — laptops, workstations, or edge devices.
-
-| Tool | Description | Backends | GUI |
-|------|-------------|----------|-----|
-| [llama.cpp](https://github.com/ggerganov/llama.cpp) | The foundational C/C++ LLM inference engine; cross-platform CPU+GPU, GGUF format, powers most local tools | CUDA, Metal, Vulkan, ROCm | ✅ Web (built-in server) |
-| [Ollama](https://github.com/ollama/ollama) | "Docker for LLMs" — one-command model pull & run, OpenAI-compatible API | llama.cpp, MLX | Web UI via Open WebUI |
-| [LM Studio](https://lmstudio.ai) | Polished cross-platform desktop app; model discovery, local server, chat | llama.cpp, MLX | ✅ Native |
-| [GPT4All](https://github.com/nomic-ai/gpt4all) | Privacy-first desktop app; curated model library, no GPU required | llama.cpp | ✅ Native |
-| [Jan](https://github.com/janhq/jan) | ChatGPT-like open-source desktop app; local-first, extensions | llama.cpp, TensorRT | ✅ Native |
-| [koboldcpp](https://github.com/LostRuins/koboldcpp) | Single-binary llama.cpp with a web UI for creative writing & roleplay | llama.cpp | ✅ Web |
-| [text-generation-webui](https://github.com/oobabooga/text-generation-webui) | Feature-rich Gradio web UI with multi-backend support (Oobabooga) | llama.cpp, ExLlamaV2, GPTQ, AWQ | ✅ Web |
-| [llamafile](https://github.com/Mozilla-Ocho/llamafile) | Single-file executable LLMs that run on any OS without install | llama.cpp | ✅ Web |
-| [MLC LLM](https://github.com/mlc-ai/mlc-llm) | Universal LLM deployment framework; targets CPU, GPU, Mobile, WebGPU | TVM | ✅ Web |
-| [LocalAI](https://github.com/mudler/LocalAI) | Self-hosted OpenAI-compatible REST API for LLMs, images, audio | llama.cpp, GPU backends | ✅ Web |
-| [OpenLLM](https://github.com/bentoml/OpenLLM) | Open-source platform for deploying and operating LLMs in production via BentoML | Multiple | ✅ Web |
-| [msty](https://msty.app/) | Simple, clean desktop app for running local and online AI models side-by-side | llama.cpp | ✅ Native |
-| [Open Interpreter](https://github.com/KillianLucas/open-interpreter) | Locally running implementation of OpenAI's Code Interpreter; executes code in the terminal | llama.cpp, Ollama | ✅ Terminal |
-| [bitnet.cpp](https://github.com/microsoft/BitNet) | Official inference framework for 1-bit LLMs (BitNet b1.58); fast lossless CPU inference | CPU (NPU/GPU coming) | ❌ |
-| [PowerInfer](https://github.com/SJTU-IPADS/PowerInfer) | CPU/GPU inference engine exploiting neuron activation locality for faster inference | CUDA + CPU | ❌ |
-
-### Server / Production
-
-Designed for high-throughput, multi-user, and production API serving.
-
-| Tool | Description | Key Feature | GPU Support |
-|------|-------------|-------------|-------------|
-| [vLLM](https://github.com/vllm-project/vllm) | State-of-the-art serving engine with PagedAttention & continuous batching | Highest throughput | NVIDIA, AMD, TPU |
-| [TGI (Text Generation Inference)](https://github.com/huggingface/text-generation-inference) | Hugging Face's production-grade Rust/Python server | Flash Attention, tensor parallelism | NVIDIA, AMD, Gaudi |
-| [SGLang](https://github.com/sgl-project/sglang) | Fast structured generation runtime with RadixAttention | Structured outputs | NVIDIA |
-| [LiteLLM](https://github.com/BerriAI/litellm) | Unified OpenAI-compatible proxy for 100+ LLM providers | Provider routing | Cloud + Local |
-| [Triton Inference Server](https://github.com/triton-inference-server/server) | NVIDIA's enterprise multi-framework model serving | Multi-model, multi-GPU | NVIDIA |
-| [Ray Serve](https://github.com/ray-project/ray) | Scalable model serving via Ray distributed framework | Autoscaling | Any |
-| [FastChat](https://github.com/lm-sys/FastChat) | Multi-model API server and chat UI (LLM Arena backend) | Multi-model | NVIDIA |
-| [Aphrodite Engine](https://github.com/PygmalionAI/aphrodite-engine) | vLLM fork with extra quantization methods and creative writing focus | GPTQ, AWQ, EXL2 | NVIDIA |
-| [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | NVIDIA's peak-performance compiled inference for Blackwell/Hopper | FP8, NVFP4 | NVIDIA |
-| [Llama.cpp server](https://github.com/ggerganov/llama.cpp/tree/master/examples/server) | Built-in OpenAI-compatible HTTP server inside llama.cpp | Cross-platform CPU+GPU | Any |
-| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | Agent-native LLM cost router; 15-dimension classifier routes to cheapest capable model in <1ms, 41+ providers, x402 micropayments | Any | Any |
-| [Portkey Gateway](https://github.com/Portkey-AI/gateway) | Unified API for 100+ open & closed-source models with caching, fallbacks, retries, load-balancing, and edge deployment | Any | Any |
-
----
-
-## 3. Local Agents
+## 1. Local Agents
 
 ### Coding Agents & IDE Extensions
 
@@ -169,7 +106,7 @@ Full autonomous agents that can plan, act, use tools, and run 24/7 without const
 
 ---
 
-## 4. Libraries & Frameworks
+## 2. Libraries & Frameworks
 
 ### Python
 
@@ -218,12 +155,12 @@ Full autonomous agents that can plan, act, use tools, and run 24/7 without const
 | [GenKit (Firebase)](https://github.com/firebase/genkit) | Google's framework for production AI flows in JS/TS | Firebase / Google Cloud apps |
 | [Bee Agent Framework](https://github.com/i-am-bee/bee-agent-framework) | IBM's open-source TypeScript agent framework | Enterprise TypeScript agents |
 | **Core Libraries** |
-| [ai](https://www.npmjs.com/package/ai) | Vercel AI SDK — stream-first unified API for LLMs, RSC support, tool calling | Universal LLM SDK for JS/TS |
-| [genkit](https://www.npmjs.com/package/genkit) | Google's GenKit — production AI flows, plugins, tracing, evaluation | Google Cloud / Firebase AI apps |
 | [openai](https://github.com/openai/openai-node) | Official OpenAI Node.js / TypeScript SDK | OpenAI API client |
 | [anthropic](https://github.com/anthropics/anthropic-sdk-typescript) | Official Anthropic TypeScript SDK | Claude API client |
-| [ollama-js](https://github.com/ollama/ollama-js) | Official Ollama JavaScript library | Local model client |
 | [@google/genai](https://github.com/googleapis/js-genai) | Official Google Gen AI JS/TS SDK for Gemini models | Gemini API client |
+| [ollama-js](https://github.com/ollama/ollama-js) | Official Ollama JavaScript library | Local model client |
+| [ai](https://www.npmjs.com/package/ai) | Vercel AI SDK — stream-first unified API for LLMs, RSC support, tool calling | Universal LLM SDK for JS/TS |
+| [genkit](https://www.npmjs.com/package/genkit) | Google's GenKit — production AI flows, plugins, tracing, evaluation | Google Cloud / Firebase AI apps |
 | [@google/adk](https://www.npmjs.com/package/@google/adk) | Google Agent Development Kit for Node.js | Google ADK agents |
 
 ### Java
@@ -271,7 +208,7 @@ Full autonomous agents that can plan, act, use tools, and run 24/7 without const
 
 ---
 
-## 5. Prompt Optimization
+## 3. Prompt Optimization
 
 Tools for systematic prompt engineering, evaluation, and automated optimization.
 
@@ -292,7 +229,7 @@ Tools for systematic prompt engineering, evaluation, and automated optimization.
 
 ---
 
-## 6. Context Optimization
+## 4. Context Optimization
 
 Tools and techniques for managing, compressing, and optimizing the LLM context window.
 
@@ -312,7 +249,7 @@ Tools and techniques for managing, compressing, and optimizing the LLM context w
 
 ---
 
-## 7. Agent Memory
+## 5. Agent Memory
 
 Persistent, long-term, and working memory systems for AI agents.
 
@@ -330,7 +267,7 @@ Persistent, long-term, and working memory systems for AI agents.
 
 ---
 
-## 8. RAG Pipelines
+## 6. RAG Pipelines
 
 Frameworks and tools for building Retrieval-Augmented Generation systems.
 
@@ -351,7 +288,7 @@ Frameworks and tools for building Retrieval-Augmented Generation systems.
 
 ---
 
-## 9. Vector Databases
+## 7. Vector Databases
 
 Purpose-built stores for high-dimensional vector embeddings.
 
@@ -375,7 +312,54 @@ Purpose-built stores for high-dimensional vector embeddings.
 
 ---
 
-## 10. Fine-Tuning
+
+## 8. Inference Engines
+
+### Desktop / Local
+
+Optimized for personal hardware — laptops, workstations, or edge devices.
+
+| Tool | Description | Backends | GUI |
+|------|-------------|----------|-----|
+| [llama.cpp](https://github.com/ggerganov/llama.cpp) | The foundational C/C++ LLM inference engine; cross-platform CPU+GPU, GGUF format, powers most local tools | CUDA, Metal, Vulkan, ROCm | ✅ Web (built-in server) |
+| [Ollama](https://github.com/ollama/ollama) | "Docker for LLMs" — one-command model pull & run, OpenAI-compatible API | llama.cpp, MLX | Web UI via Open WebUI |
+| [LM Studio](https://lmstudio.ai) | Polished cross-platform desktop app; model discovery, local server, chat | llama.cpp, MLX | ✅ Native |
+| [GPT4All](https://github.com/nomic-ai/gpt4all) | Privacy-first desktop app; curated model library, no GPU required | llama.cpp | ✅ Native |
+| [Jan](https://github.com/janhq/jan) | ChatGPT-like open-source desktop app; local-first, extensions | llama.cpp, TensorRT | ✅ Native |
+| [koboldcpp](https://github.com/LostRuins/koboldcpp) | Single-binary llama.cpp with a web UI for creative writing & roleplay | llama.cpp | ✅ Web |
+| [text-generation-webui](https://github.com/oobabooga/text-generation-webui) | Feature-rich Gradio web UI with multi-backend support (Oobabooga) | llama.cpp, ExLlamaV2, GPTQ, AWQ | ✅ Web |
+| [llamafile](https://github.com/Mozilla-Ocho/llamafile) | Single-file executable LLMs that run on any OS without install | llama.cpp | ✅ Web |
+| [MLC LLM](https://github.com/mlc-ai/mlc-llm) | Universal LLM deployment framework; targets CPU, GPU, Mobile, WebGPU | TVM | ✅ Web |
+| [LocalAI](https://github.com/mudler/LocalAI) | Self-hosted OpenAI-compatible REST API for LLMs, images, audio | llama.cpp, GPU backends | ✅ Web |
+| [OpenLLM](https://github.com/bentoml/OpenLLM) | Open-source platform for deploying and operating LLMs in production via BentoML | Multiple | ✅ Web |
+| [msty](https://msty.app/) | Simple, clean desktop app for running local and online AI models side-by-side | llama.cpp | ✅ Native |
+| [Open Interpreter](https://github.com/KillianLucas/open-interpreter) | Locally running implementation of OpenAI's Code Interpreter; executes code in the terminal | llama.cpp, Ollama | ✅ Terminal |
+| [bitnet.cpp](https://github.com/microsoft/BitNet) | Official inference framework for 1-bit LLMs (BitNet b1.58); fast lossless CPU inference | CPU (NPU/GPU coming) | ❌ |
+| [PowerInfer](https://github.com/SJTU-IPADS/PowerInfer) | CPU/GPU inference engine exploiting neuron activation locality for faster inference | CUDA + CPU | ❌ |
+
+### Server / Production
+
+Designed for high-throughput, multi-user, and production API serving.
+
+| Tool | Description | Key Feature | GPU Support |
+|------|-------------|-------------|-------------|
+| [vLLM](https://github.com/vllm-project/vllm) | State-of-the-art serving engine with PagedAttention & continuous batching | Highest throughput | NVIDIA, AMD, TPU |
+| [TGI (Text Generation Inference)](https://github.com/huggingface/text-generation-inference) | Hugging Face's production-grade Rust/Python server | Flash Attention, tensor parallelism | NVIDIA, AMD, Gaudi |
+| [SGLang](https://github.com/sgl-project/sglang) | Fast structured generation runtime with RadixAttention | Structured outputs | NVIDIA |
+| [LiteLLM](https://github.com/BerriAI/litellm) | Unified OpenAI-compatible proxy for 100+ LLM providers | Provider routing | Cloud + Local |
+| [Triton Inference Server](https://github.com/triton-inference-server/server) | NVIDIA's enterprise multi-framework model serving | Multi-model, multi-GPU | NVIDIA |
+| [Ray Serve](https://github.com/ray-project/ray) | Scalable model serving via Ray distributed framework | Autoscaling | Any |
+| [FastChat](https://github.com/lm-sys/FastChat) | Multi-model API server and chat UI (LLM Arena backend) | Multi-model | NVIDIA |
+| [Aphrodite Engine](https://github.com/PygmalionAI/aphrodite-engine) | vLLM fork with extra quantization methods and creative writing focus | GPTQ, AWQ, EXL2 | NVIDIA |
+| [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | NVIDIA's peak-performance compiled inference for Blackwell/Hopper | FP8, NVFP4 | NVIDIA |
+| [Llama.cpp server](https://github.com/ggerganov/llama.cpp/tree/master/examples/server) | Built-in OpenAI-compatible HTTP server inside llama.cpp | Cross-platform CPU+GPU | Any |
+| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | Agent-native LLM cost router; 15-dimension classifier routes to cheapest capable model in <1ms, 41+ providers, x402 micropayments | Any | Any |
+| [Portkey Gateway](https://github.com/Portkey-AI/gateway) | Unified API for 100+ open & closed-source models with caching, fallbacks, retries, load-balancing, and edge deployment | Any | Any |
+
+---
+
+
+## 9. Fine-Tuning
 
 Frameworks and tools for fine-tuning, alignment, and PEFT methods.
 
@@ -417,7 +401,7 @@ Frameworks and tools for fine-tuning, alignment, and PEFT methods.
 
 ---
 
-## 11. Miscellaneous
+## 10. Miscellaneous
 
 Tools that are useful across multiple categories or don't fit neatly into a single section.
 
