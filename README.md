@@ -369,7 +369,9 @@ Tools that are useful across multiple categories or don't fit neatly into a sing
 
 | Tool | Description | Stars | License |
 |------|-------------|-------|---------|
-| [llmfit](https://github.com/mobiusml/hqq) | HQQ – Half-Quadratic Quantization; fast PTQ without calibration data | ![Stars](https://img.shields.io/github/stars/mobiusml/hqq?style=flat-square) | Apache-2.0 |
+| [llmfit](https://github.com/AlexsJones/llmfit) | Rust TUI/CLI that scans your hardware and shows which models from 100+ providers will fit and run on it | ![Stars](https://img.shields.io/github/stars/AlexsJones/llmfit?style=flat-square) | MIT |
+| [llm-checker](https://github.com/Sunwood-ai-labs/llm-checker) | Python CLI that scans hardware (Apple Silicon, NVIDIA, AMD, Intel Arc), scores compatible models on quality/speed/fit, Ollama integration + built-in MCP server | ![Stars](https://img.shields.io/github/stars/Sunwood-ai-labs/llm-checker?style=flat-square) | MIT |
+| [selfhostllm](https://github.com/erans/selfhostllm) | Web calculator estimating GPU memory requirements and max concurrent requests for self-hosted LLM inference | ![Stars](https://img.shields.io/github/stars/erans/selfhostllm?style=flat-square) | MIT |
 
 ---
 
