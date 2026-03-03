@@ -12,8 +12,10 @@
    1. [Coding Agents & IDE Extensions](#coding-agents--ide-extensions)
    2. [Autonomous Agents](#autonomous-agents)
    3. [AI Browsers](#ai-browsers)
-   4. [Audio / Voice Agents](#audio--voice-agents)
-   5. [General-Purpose Local Agents](#general-purpose-local-agents)
+   4. [Research & Knowledge Agents](#research--knowledge-agents)
+   5. [Computer Use & OS Agents](#computer-use--os-agents)
+   6. [Audio / Voice Agents](#audio--voice-agents)
+   7. [General-Purpose Local Agents](#general-purpose-local-agents)
 2. [Libraries & Frameworks](#2-libraries--frameworks)
    1. [Python](#python)
    2. [JavaScript / TypeScript](#javascript--typescript)
@@ -60,9 +62,15 @@
 | [Void](https://github.com/voideditor/void) | IDE Fork | VS Code | ✅ Native | Open-source Cursor alternative |
 | [Warp](https://www.warp.dev/) | AI Terminal | Terminal | ✅ Local + Cloud | AI-native terminal with natural language commands, agent mode, and team sharing |
 | [Warp Oz](https://www.warp.dev/oz) | Autonomous Agent | Terminal | ✅ Cloud | Warp's autonomous terminal agent; runs multi-step tasks end-to-end with full shell context |
+| [goose](https://github.com/block/goose) | CLI Agent | Terminal | ✅ Local | Open-source, extensible AI agent that goes beyond code suggestions |
+| [Roo-Code](https://github.com/RooCodeInc/Roo-Code) | In-editor Agent | VS Code | ✅ OpenAI-compat | Autonomous coding agent formerly known as Roo-Cline |
+| [crush](https://github.com/charmbracelet/crush) | CLI Agent | Terminal | ✅ Local | Glamorous AI coding agent for the terminal by Charm |
 | [Plandex](https://github.com/plandex-ai/plandex) | CLI Agent | Terminal | ✅ OpenAI-compat | Long-running terminal agent for complex tasks |
 | [SWE-agent](https://github.com/princeton-nlp/SWE-agent) | CLI Agent | Terminal | ✅ Via API | Autonomous GitHub issue solver |
 | [OpenHands (OpenDevin)](https://github.com/All-Hands-AI/OpenHands) | Web + CLI | Browser / Terminal | ✅ OpenAI-compat | Full autonomous software engineering agent |
+| [kilocode](https://github.com/Kilo-Org/kilocode) | In-editor Agent | VS Code | ✅ Mixed | AI coding assistant for planning, building, and fixing code |
+| [humanlayer](https://github.com/humanlayer/humanlayer) | Middleware | API | ✅ Layer | Human-in-the-loop layer for AI agents to solve hard problems in complex codebases |
+| [ProxyAI](https://github.com/carlrobertoh/ProxyAI) | IDE Plugin | JetBrains | ✅ Native | Open-source AI copilot for JetBrains IDEs |
 | [Claude Code](https://www.anthropic.com/claude-code) | CLI Agent | Terminal | ❌ Cloud (Claude) | Anthropic's terminal agent; code onboarding, PR generation, powerful edits |
 | [Jules](https://jules.google/) | Async Agent | GitHub | ❌ Cloud (Gemini) | Google's async coding agent; works in the background on GitHub issues |
 | [Browser-Use](https://github.com/browser-use/browser-use) | Browser Agent | Browser | ✅ OpenAI-compat | Enable AI to control your browser; web automation agent |
@@ -103,6 +111,31 @@ Full autonomous agents that can plan, act, use tools, and run 24/7 without const
 | [Dia](https://www.diabrowser.com/) | AI browser from The Browser Company (makers of Arc); chat with tabs, write, learn, shop with privacy controls | macOS |
 | [Browserbase](https://www.browserbase.com/) | Serverless cloud browser infrastructure for AI agents; Playwright, Puppeteer, Selenium at scale with stealth mode | Cloud / API |
 | [ChatGPT Atlas](https://chatgpt.com/atlas/) | OpenAI's agentic interface for web-aware tasks and autonomous browsing within ChatGPT | Web |
+| [Page Assist](https://github.com/n4ze3m/page-assist) | Browser Extension | Chrome/Firefox | ✅ Local | Use locally running AI models to assist in web browsing via sidebar |
+| [nanobrowser](https://github.com/nanobrowser/nanobrowser) | Browser Extension | Chrome | ✅ Local | Open-source Chrome extension for AI-powered web automation |
+
+### Research & Knowledge Agents
+
+| Tool | Description | Platform |
+|------|-------------|----------|
+| [Perplexica](https://github.com/ItzCrazyKns/Perplexica) | AI-powered search engine; local alternative to Perplexity | Self-hosted |
+| [gpt-researcher](https://github.com/assafelovic/gpt-researcher) | Autonomous agent that conducts deep web research and generates long reports | Python / CLI |
+| [SurfSense](https://github.com/MODSetter/SurfSense) | Personal knowledge assistant; alternative to NotebookLM / Perplexity / Glean | Self-hosted |
+| [open-notebook](https://github.com/lfnovo/open-notebook) | Open-source implementation of NotebookLM with local model support | Web |
+| [RD-Agent](https://github.com/microsoft/RD-Agent) | Autonomous agent for automating industrial R&D processes | Python |
+| [local-deep-researcher](https://github.com/langchain-ai/local-deep-researcher) | Fully local web research and report writing assistant | Python / LangGraph |
+| [maestro](https://github.com/murtaza-nasir/maestro) | AI-powered research application designed to streamline complex tasks | Web |
+
+### Computer Use & OS Agents
+
+| Tool | Description | Platform |
+|------|-------------|----------|
+| [OmniParser](https://github.com/microsoft/OmniParser) | Pure vision-based GUI agent screen parsing tool | Python / Model |
+| [cua](https://github.com/trycua/cua) | Docker container environment specialized for Computer-Use AI agents | Docker |
+| [self-operating-computer](https://github.com/OthersideAI/self-operating-computer) | Framework enabling multimodal models to operate a computer keyboard/mouse | Python |
+| [Agent-S](https://github.com/simular-ai/Agent-S) | Open agentic framework that uses computers like a human | Python |
+| [openwork](https://github.com/different-ai/openwork) | Open-source alternative to Claude Cowork powered by OpenCode | Desktop |
+| [mobile-use](https://github.com/minitap-ai/mobile-use) | AI agent that controls Android or iOS devices via natural language | Python |
 
 ### General-Purpose Local Agents
 
@@ -112,6 +145,8 @@ Full autonomous agents that can plan, act, use tools, and run 24/7 without const
 | [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | All-in-one local AI app with agents, RAG, tools | Desktop + Docker |
 | [LibreChat](https://github.com/danny-avila/LibreChat) | Multi-provider AI chat with agents, plugins, RAG | Self-hosted |
 | [SillyTavern](https://github.com/SillyTavern/SillyTavern) | Advanced frontend for character-based AI interactions | Self-hosted |
+| [Lobe Chat](https://github.com/lobehub/lobe-chat) | Modern design AI chat framework; support for multiple backends, plugins, and RAG | Docker / Vercel |
+| [ChatBox](https://github.com/ChatBoxAI/ChatBox) | User-friendly desktop client app for AI models (Ollama, OpenAI, Claude, etc.) | Windows/macOS/Linux |
 | [PrivateGPT](https://github.com/zylon-ai/private-gpt) | Production-ready private document Q&A agent | 100% local |
 | [Dash (Agno)](https://github.com/agno-agi/dash) | Self-learning data / text-to-SQL agent grounded in 6 layers of context; inspired by OpenAI's internal impl | Built on Agno framework |
 | [visual-explainer](https://github.com/nicobailon/visual-explainer) | Agent skill that generates rich HTML pages and slide decks for diagrams, diff reviews, plan audits, and project recaps | Agent skill / tool |
@@ -260,6 +295,7 @@ Tools and techniques for managing, compressing, and optimizing the LLM context w
 | [LlamaIndex Context Management](https://docs.llamaindex.ai/en/stable/module_guides/querying/response_synthesizers/) | Built-in context window management in LlamaIndex pipelines | Pipeline |
 | [Context Caching (Gemini)](https://cloud.google.com/vertex-ai/generative-ai/docs/context-cache/context-cache-overview) | Reuse prompt prefixes across requests to reduce latency + cost | Caching |
 | [claude-context-mode](https://github.com/mksglu/claude-context-mode) | Stops context loss from large outputs; smart snippets, fuzzy search, progressive throttling, subagent routing for Claude | Context Management |
+| [LMCache](https://github.com/LMCache/LMCache) | KV Cache sharing layer; share and reuse KV caches across requests for faster inference and higher throughput | Caching |
 
 ---
 
@@ -278,6 +314,8 @@ Persistent, long-term, and working memory systems for AI agents.
 | [Graphiti (Zep)](https://github.com/getzep/graphiti) | Real-time knowledge graph for AI agents from the Zep team | Knowledge Graph | ✅ |
 | [R2R (Retrieval to Reasoning)](https://github.com/SciPhi-AI/R2R) | Production-ready RAG + memory system with knowledge graphs | Hybrid | ✅ |
 | [ReMemory](https://github.com/agentscope-ai/reme) | Memory Management Kit for agents; compacts history, writes summaries to file, semantic recall via MemorySearch | File + Semantic | ✅ |
+| [supermemory](https://github.com/supermemoryai/supermemory) | Personal AI second brain; fast, scalable memory engine and application | Second Brain | ✅ |
+| [memU](https://github.com/NevaMind-AI/memU) | Open-source memory framework for AI companions and persona-driven agents | Persona Memory | ✅ |
 
 ---
 
@@ -302,6 +340,12 @@ Frameworks and tools for building Retrieval-Augmented Generation systems.
 | [PageIndex](https://github.com/VectifyAI/PageIndex) | Vectorless, reasoning-based RAG; builds a hierarchical document index and uses LLM reasoning over it instead of embeddings | No-vector RAG |
 | [GraphRAG](https://github.com/microsoft/graphrag) | Microsoft's graph-based RAG; builds knowledge graph communities and uses hierarchical summarisation for global question answering | Knowledge Graph RAG |
 | [HashIndex](https://github.com/JasonHonKL/HashIndex) | Ultra-fast LLM-optimised document indexing without vector search; hash-based retrieval | No-vector RAG |
+| [LightRAG](https://github.com/HKUDS/LightRAG) | Dual-level retrieval system combining graph and vector search for deep context awareness | Graph + Vector RAG |
+| [vanna](https://github.com/vanna-ai/vanna) | Open-source Python RAG framework for SQL generation and related functionality | Text-to-SQL RAG |
+| [graphiti](https://github.com/getzep/graphiti) | Real-time knowledge graph for AI agents with temporal awareness | Knowledge Graph |
+| [onyx](https://github.com/onyx-dot-app/onyx) | Enterprise AI platform connected to company docs, apps, and people | Enterprise RAG |
+| [claude-context](https://github.com/zilliztech/claude-context) | Make entire codebase the context for any coding agent | Codebase RAG |
+| [pipeshub-ai](https://github.com/pipeshub-ai/pipeshub-ai) | Extensible workplace AI platform for enterprise search and workflow automation | Enterprise RAG |
 
 ---
 
@@ -329,7 +373,6 @@ Purpose-built stores for high-dimensional vector embeddings.
 
 ---
 
-
 ## 8. Inference Engines
 
 ### Desktop / Local
@@ -354,6 +397,10 @@ Optimized for personal hardware — laptops, workstations, or edge devices.
 | [bitnet.cpp](https://github.com/microsoft/BitNet) | Official inference framework for 1-bit LLMs (BitNet b1.58); fast lossless CPU inference | CPU (NPU/GPU coming) | ❌ |
 | [PowerInfer](https://github.com/SJTU-IPADS/PowerInfer) | CPU/GPU inference engine exploiting neuron activation locality for faster inference | CUDA + CPU | ❌ |
 | [exo](https://github.com/exo-explore/exo) | Distributed inference engine that clusters multiple devices (macOS, Linux) into a single GPU for running frontier models | Metal, CUDA | ✅ Dashboard |
+| [distributed-llama](https://github.com/b4rtaz/distributed-llama) | Connect home devices into a powerful cluster to accelerate LLM inference | C++ | ❌ |
+| [ik_llama.cpp](https://github.com/ikawrakow/ik_llama.cpp) | llama.cpp fork with additional SOTA quants and improved performance | llama.cpp fork | ❌ |
+| [FastFlowLM](https://github.com/FastFlowLM/FastFlowLM) | Optimized inference engine for running LLMs on AMD Ryzen™ AI NPUs | AMD NPU | ❌ |
+| [lemonade](https://github.com/lemonade-sdk/lemonade) | Local LLM server with GPU and NPU Acceleration | Multiple | ❌ |
 
 ### Server / Production
 
@@ -363,6 +410,7 @@ Designed for high-throughput, multi-user, and production API serving.
 |------|-------------|-------------|-------------|
 | [vLLM](https://github.com/vllm-project/vllm) | State-of-the-art serving engine with PagedAttention & continuous batching | Highest throughput | NVIDIA, AMD, TPU |
 | [TGI (Text Generation Inference)](https://github.com/huggingface/text-generation-inference) | Hugging Face's production-grade Rust/Python server | Flash Attention, tensor parallelism | NVIDIA, AMD, Gaudi |
+| [flashinfer](https://github.com/flashinfer-ai/flashinfer) | High-performance kernel library for LLM serving | Kernel optimization | NVIDIA |
 | [SGLang](https://github.com/sgl-project/sglang) | Fast structured generation runtime with RadixAttention | Structured outputs | NVIDIA |
 | [LiteLLM](https://github.com/BerriAI/litellm) | Unified OpenAI-compatible proxy for 100+ LLM providers | Provider routing | Cloud + Local |
 | [Triton Inference Server](https://github.com/triton-inference-server/server) | NVIDIA's enterprise multi-framework model serving | Multi-model, multi-GPU | NVIDIA |
@@ -373,6 +421,11 @@ Designed for high-throughput, multi-user, and production API serving.
 | [Llama.cpp server](https://github.com/ggerganov/llama.cpp/tree/master/examples/server) | Built-in OpenAI-compatible HTTP server inside llama.cpp | Cross-platform CPU+GPU | Any |
 | [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | Agent-native LLM cost router; 15-dimension classifier routes to cheapest capable model in <1ms, 41+ providers, x402 micropayments | Any | Any |
 | [Portkey Gateway](https://github.com/Portkey-AI/gateway) | Unified API for 100+ open & closed-source models with caching, fallbacks, retries, load-balancing, and edge deployment | Any | Any |
+| [Nano-vLLM](https://github.com/GeeeekExplorer/nano-vllm) | Lightweight vLLM implementation built from scratch for minimal serving overhead | Least overhead | NVIDIA |
+| [gpustack](https://github.com/gpustack/gpustack) | Simple, scalable AI model deployment on GPU clusters; managing multiple nodes easily | Multi-node | NVIDIA/AMD |
+| [mini-sglang](https://github.com/sgl-project/mini-sglang) | Lightweight yet high-performance inference framework for LLMs based on SGLang | Fast serving | NVIDIA |
+| [vllm-gfx906](https://github.com/nlzy/vllm-gfx906) | vLLM optimized for AMD gfx906 GPUs (Radeon VII, MI50, MI60) | AMD specialized | AMD |
+| [llm-scaler](https://github.com/intel/llm-scaler) | Run and scale LLMs on Intel Arc™ Pro B60 GPUs | Intel specialized | Intel |
 
 ---
 
@@ -390,8 +443,10 @@ Frameworks and tools for fine-tuning, alignment, and PEFT methods.
 | [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) | User-friendly fine-tuning with Web UI + CLI; 100+ model support | LoRA, QLoRA, Full, SFT, DPO, PPO, ORPO | ✅ |
 | [TRL (HuggingFace)](https://github.com/huggingface/trl) | HuggingFace library for RL-based LLM training | SFT, DPO, GRPO, PPO, Reward Modeling | ✅ |
 | [PEFT (HuggingFace)](https://github.com/huggingface/peft) | Parameter-Efficient Fine-Tuning methods library | LoRA, QLoRA, Prefix Tuning, Adapters, IA³ | ✅ |
+| [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF) | High-performance RLHF framework built on Ray, vLLM, ZeRO-3, and DeepSpeed | RLHF, PPO, DPO, GRPO, SFT | ✅ |
+| [Kiln](https://github.com/kiln-ai/kiln) | Fine-tuning tool with synthetic data generation and dataset collaboration | SFT / Synthetic Data | ✅ |
+| [augmentoolkit](https://github.com/e-p-armstrong/augmentoolkit) | Tool for training open-source LLMs on new factual datasets | Fact Training | ✅ |
 | [torchtune](https://github.com/pytorch/torchtune) | PyTorch's native fine-tuning library; no frills, pure PyTorch | LoRA, QLoRA, Full | ✅ |
-| [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF) | High-performance RLHF training framework (Ray + DeepSpeed) | PPO, DPO, GRPO, SFT | ✅ |
 | [Megatron-LM](https://github.com/NVIDIA/Megatron-LM) | NVIDIA's framework for training & fine-tuning at massive scale | Full FT, tensor/pipeline parallelism | ✅ (multi-node) |
 | [DeepSpeed](https://github.com/microsoft/DeepSpeed) | Microsoft's deep learning optimization library; ZeRO memory optimization | Full FT, ZeRO-1/2/3 | ✅✅ |
 
@@ -429,6 +484,19 @@ Tools that are useful across multiple categories or don't fit neatly into a sing
 | [llm-checker](https://github.com/Sunwood-ai-labs/llm-checker) | Python CLI that scans hardware (Apple Silicon, NVIDIA, AMD, Intel Arc), scores compatible models on quality/speed/fit, Ollama integration + built-in MCP server | ![Stars](https://img.shields.io/github/stars/Sunwood-ai-labs/llm-checker?style=flat-square) | MIT |
 | [selfhostllm](https://github.com/erans/selfhostllm) | Web calculator estimating GPU memory requirements and max concurrent requests for self-hosted LLM inference | ![Stars](https://img.shields.io/github/stars/erans/selfhostllm?style=flat-square) | MIT |
 | [gitingest](https://github.com/coderamp-labs/gitingest) | Converts any GitHub repo into a single prompt-friendly text dump; replace "hub" with "ingest" in any GitHub URL | ![Stars](https://img.shields.io/github/stars/coderamp-labs/gitingest?style=flat-square) | MIT |
+| [context7](https://github.com/upstash/context7) | Up-to-date code documentation for LLMs and AI code editors | ![Stars](https://img.shields.io/github/stars/upstash/context7?style=flat-square) | MIT |
+| [deepwiki-open](https://github.com/AsyncFuncAI/deepwiki-open) | AI-powered wiki generator for GitHub/Gitlab/Bitbucket repositories | ![Stars](https://img.shields.io/github/stars/AsyncFuncAI/deepwiki-open?style=flat-square) | MIT |
+| [cai](https://github.com/aliasrobotics/cai) | Cybersecurity AI framework (CAI) for AI security testing | ![Stars](https://img.shields.io/github/stars/aliasrobotics/cai?style=flat-square) | MIT |
+| [speakr](https://github.com/murtaza-nasir/speakr) | Personal, self-hosted web application for transcribing audio recordings | ![Stars](https://img.shields.io/github/stars/murtaza-nasir/speakr?style=flat-square) | MIT |
+| [presenton](https://github.com/presenton/presenton) | Open-source AI presentation generator and API | ![Stars](https://img.shields.io/github/stars/presenton/presenton?style=flat-square) | MIT |
+| [OmniGen2](https://github.com/VectorSpaceLab/OmniGen2) | Exploration into advanced multimodal generation | ![Stars](https://img.shields.io/github/stars/VectorSpaceLab/OmniGen2?style=flat-square) | MIT |
+| [4o-ghibli-at-home](https://github.com/TheAhmadOsman/4o-ghibli-at-home) | Self-hosted AI photo stylizer for performance and privacy | ![Stars](https://img.shields.io/github/stars/TheAhmadOsman/4o-ghibli-at-home?style=flat-square) | MIT |
+| [Observer](https://github.com/Roy3838/Observer) | Local micro-agents that observe, log and react to system events | ![Stars](https://img.shields.io/github/stars/Roy3838/Observer?style=flat-square) | MIT |
+| [gabber](https://github.com/gabber-dev/gabber) | Tool to build AI apps that see, hear, and speak using screen/mic/cam | ![Stars](https://img.shields.io/github/stars/gabber-dev/gabber?style=flat-square) | MIT |
+| [promptcat](https://github.com/sevenreasons/promptcat) | Zero-dependency prompt manager/catalog in a single HTML file | ![Stars](https://img.shields.io/github/stars/sevenreasons/promptcat?style=flat-square) | MIT |
+| [heretic](https://github.com/p-e-w/heretic) | Fully automatic censorship removal for language models | ![Stars](https://img.shields.io/github/stars/p-e-w/heretic?style=flat-square) | MIT |
+| [llama-swap](https://github.com/mostlygeek/llama-swap) | Reliable model swapping for local OpenAI compatible servers | ![Stars](https://img.shields.io/github/stars/mostlygeek/llama-swap?style=flat-square) | MIT |
+| [outlines](https://github.com/dottxt-ai/outlines) | Structured outputs and generation control for LLMs | ![Stars](https://img.shields.io/github/stars/dottxt-ai/outlines?style=flat-square) | Apache-2.0 |
 
 
 ---
