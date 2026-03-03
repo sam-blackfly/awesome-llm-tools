@@ -285,6 +285,9 @@ Frameworks and tools for building Retrieval-Augmented Generation systems.
 | [Verba](https://github.com/weaviate/verba) | Weaviate-powered open-source RAG chatbot | Weaviate + RAG |
 | [DSPy](https://github.com/stanfordnlp/dspy) | Declarative RAG pipelines with auto-optimization of retrieval | Optimized RAG |
 | [Camel RAG](https://github.com/camel-ai/camel) | RAG tools within the CAMEL multi-agent framework | Multi-agent + RAG |
+| [PageIndex](https://github.com/VectifyAI/PageIndex) | Vectorless, reasoning-based RAG; builds a hierarchical document index and uses LLM reasoning over it instead of embeddings | No-vector RAG |
+| [GraphRAG](https://github.com/microsoft/graphrag) | Microsoft's graph-based RAG; builds knowledge graph communities and uses hierarchical summarisation for global question answering | Knowledge Graph RAG |
+| [HashIndex](https://github.com/JasonHonKL/HashIndex) | Ultra-fast LLM-optimised document indexing without vector search; hash-based retrieval | No-vector RAG |
 
 ---
 
