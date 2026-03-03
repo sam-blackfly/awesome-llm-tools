@@ -17,10 +17,13 @@
    - [Autonomous Agents](#autonomous-agents)
    - [Audio / Voice Agents](#audio--voice-agents)
    - [General-Purpose Local Agents](#general-purpose-local-agents)
-4. [Agent Frameworks](#4-agent-frameworks)
+4. [Libraries & Frameworks](#4-libraries--frameworks)
    - [Python](#python)
    - [JavaScript / TypeScript](#javascript--typescript)
-   - [Other Languages](#other-languages)
+   - [Java](#java)
+   - [Kotlin](#kotlin)
+   - [Go](#go)
+   - [Rust](#rust)
 5. [Prompt Optimization](#5-prompt-optimization)
 6. [Context Optimization](#6-context-optimization)
 7. [Agent Memory](#7-agent-memory)
@@ -166,7 +169,7 @@ Full autonomous agents that can plan, act, use tools, and run 24/7 without const
 
 ---
 
-## 4. Agent Frameworks
+## 4. Libraries & Frameworks
 
 ### Python
 
@@ -185,6 +188,7 @@ Full autonomous agents that can plan, act, use tools, and run 24/7 without const
 | [Atomic Agents](https://github.com/BrainBlend-AI/atomic-agents) | Modular, dependency-injection-based agent framework | Composable, testable agents |
 | [Camel](https://github.com/camel-ai/camel) | Communicative Agents framework; role-play multi-agent | Research, agent communication patterns |
 | [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Official OpenAI Python SDK for building agents | OpenAI-native agent workflows |
+| [Google ADK](https://google.github.io/adk-docs/) | Google's Agent Development Kit — modular, model-agnostic framework with multi-agent orchestration, rich tool ecosystem, built-in eval | Google Cloud / Gemini agents |
 | [aisuite](https://github.com/andrewyng/aisuite) | Simple unified interface to multiple Generative AI providers, by Andrew Ng | Multi-provider prototyping |
 | [swarm](https://github.com/openai/swarm) | OpenAI's educational framework for lightweight ergonomic multi-agent orchestration | Learning multi-agent patterns |
 | [guidance](https://github.com/guidance-ai/guidance) | Interleave generation, prompting, and logic control in a continuous flow matching LLM processing | Constrained, structured generation |
@@ -192,6 +196,15 @@ Full autonomous agents that can plan, act, use tools, and run 24/7 without const
 | [Multi-Agent Orchestrator](https://github.com/awslabs/multi-agent-orchestrator) | AWS framework for managing multiple AI agents and complex multi-turn conversations | Enterprise multi-agent systems |
 | [rowboat](https://github.com/rowboatlabs/rowboat) | AI-powered multi-agent builder with no-code UI, powered by OpenAI Agents SDK | Rapid agent prototyping |
 | [Medusa](https://github.com/FasterDecoding/Medusa) | Framework accelerating LLM generation with multiple decoding heads; no specialized hardware | Inference acceleration |
+| **— Core Libraries —** | | |
+| [transformers](https://github.com/huggingface/transformers) | HuggingFace's flagship model library; 300k+ models, inference & fine-tuning for every major architecture | Foundation library |
+| [accelerate](https://github.com/huggingface/accelerate) | HuggingFace library to run PyTorch training/inference on any hardware with minimal code changes | Multi-GPU / mixed-precision |
+| [sentence-transformers](https://github.com/UKPLab/sentence-transformers) | Easy-to-use library for state-of-the-art sentence, text, and image embeddings | Embeddings / semantic search |
+| [tiktoken](https://github.com/openai/tiktoken) | OpenAI's fast BPE tokenizer; used to count tokens before sending to APIs | Tokenization |
+| [openai](https://github.com/openai/openai-python) | Official OpenAI Python SDK | OpenAI API client |
+| [anthropic](https://github.com/anthropics/anthropic-sdk-python) | Official Anthropic Python SDK | Claude API client |
+| [google-genai](https://github.com/googleapis/python-genai) | Official Google Gen AI Python SDK for Gemini models | Gemini API client |
+| [google-adk](https://pypi.org/project/google-adk/) | Google Agent Development Kit Python package | Google ADK agents |
 
 ### JavaScript / TypeScript
 
@@ -204,16 +217,57 @@ Full autonomous agents that can plan, act, use tools, and run 24/7 without const
 | [Vercel AI SDK](https://github.com/vercel/ai) | Full-stack AI toolkit for Next.js / React | AI-powered web UIs |
 | [GenKit (Firebase)](https://github.com/firebase/genkit) | Google's framework for production AI flows in JS/TS | Firebase / Google Cloud apps |
 | [Bee Agent Framework](https://github.com/i-am-bee/bee-agent-framework) | IBM's open-source TypeScript agent framework | Enterprise TypeScript agents |
+| **— Core Libraries —** | | |
+| [ai](https://www.npmjs.com/package/ai) | Vercel AI SDK — stream-first unified API for LLMs, RSC support, tool calling | Universal LLM SDK for JS/TS |
+| [genkit](https://www.npmjs.com/package/genkit) | Google's GenKit — production AI flows, plugins, tracing, evaluation | Google Cloud / Firebase AI apps |
+| [openai](https://github.com/openai/openai-node) | Official OpenAI Node.js / TypeScript SDK | OpenAI API client |
+| [anthropic](https://github.com/anthropics/anthropic-sdk-typescript) | Official Anthropic TypeScript SDK | Claude API client |
+| [ollama-js](https://github.com/ollama/ollama-js) | Official Ollama JavaScript library | Local model client |
+| [@google/genai](https://github.com/googleapis/js-genai) | Official Google Gen AI JS/TS SDK for Gemini models | Gemini API client |
+| [@google/adk](https://www.npmjs.com/package/@google/adk) | Google Agent Development Kit for Node.js | Google ADK agents |
 
-### Other Languages
+### Java
 
-| Framework | Language | Description |
-|-----------|----------|-------------|
-| [Semantic Kernel](https://github.com/microsoft/semantic-kernel) | C# / Java / Python | Microsoft's cross-language AI SDK |
-| [Spring AI](https://github.com/spring-projects/spring-ai) | Java | Spring Framework for AI / LLM integration |
-| [LangChain4j](https://github.com/langchain4j/langchain4j) | Java | Java port of LangChain |
-| [Elixir Nx / Bumblebee](https://github.com/elixir-nx/bumblebee) | Elixir | Elixir HuggingFace model library |
-| [LLM (Simon Willison)](https://github.com/simonw/llm) | Python CLI | Simple CLI tool + plugin system for LLMs |
+| Framework | Description | Best For |
+|-----------|-------------|----------|
+| [Semantic Kernel](https://github.com/microsoft/semantic-kernel) | Microsoft's cross-language AI SDK | Enterprise, .NET / Java ecosystem |
+| [Spring AI](https://github.com/spring-projects/spring-ai) | Spring Framework for AI / LLM integration; prompt chaining, routing, RAG | Spring Boot apps |
+| [LangChain4j](https://github.com/langchain4j/langchain4j) | Java port of LangChain; chains, tools, agents, RAG | Java LLM apps |
+| [Google ADK Java](https://google.github.io/adk-docs/) | Google's Agent Development Kit for Java — same multi-agent, tool-use capabilities as the Python SDK | Google Cloud / Gemini Java agents |
+| **— Core Libraries —** | | |
+| [DJL (Deep Java Library)](https://github.com/deepjavalibrary/djl) | Amazon's engine-agnostic deep learning library for Java; run HuggingFace & PyTorch models | Java ML inference |
+| [openai-java](https://github.com/openai/openai-java) | Official OpenAI Java SDK | OpenAI API client |
+
+### Kotlin
+
+| Framework | Description | Best For |
+|-----------|-------------|----------|
+| [Koog](https://github.com/JetBrains/koog) | JetBrains' pure-Kotlin agent framework; multiplatform (JVM, Android, iOS, WASM), fault-tolerant with retries & state restore | Enterprise Kotlin / multiplatform agents |
+| **— Core Libraries —** | | |
+| [DJL (Kotlin)](https://github.com/deepjavalibrary/djl) | Amazon's DJL works seamlessly in Kotlin; run PyTorch, ONNX, HuggingFace models on JVM | Kotlin ML inference |
+| [Kotlin OpenAI client](https://github.com/aallam/openai-kotlin) | Multiplatform OpenAI API client for Kotlin (JVM, Android, JS, Native) | OpenAI API client |
+
+### Go
+
+| Framework | Description | Best For |
+|-----------|-------------|----------|
+| [LangChainGo](https://github.com/tmc/langchaingo) | Go port of LangChain; chains, tools, memory, RAG | Go LLM apps |
+| [Eino](https://github.com/cloudwego/eino) | ByteDance's LLM framework inspired by LangChain & ADK; reusable components, multi-agent coordination | High-performance Go services |
+| [adk-go](https://github.com/google/adk-go) | Google's Agent Development Kit for Go — multi-agent orchestration, tool use, Gemini/Vertex AI integration | Google ADK Go agents |
+| **— Core Libraries —** | | |
+| [go-openai](https://github.com/sashabaranov/go-openai) | Unofficial but most widely used OpenAI Go client; OpenAI, Azure OpenAI support | OpenAI API client |
+| [ollama-go](https://github.com/ollama/ollama/tree/main/api) | Official Ollama Go API client | Local model client |
+
+### Rust
+
+| Framework | Description | Best For |
+|-----------|-------------|----------|
+| [Rig](https://github.com/0xPlaygrounds/rig) | Modular, production-ready Rust library; 20+ providers, 10+ vector stores, WASM support | Performance-critical Rust agents |
+| [LLM-Chain](https://github.com/sobelio/llm-chain) | Structured multi-step LLM workflows in Rust; prompt templates, chains, tool calling | Type-safe Rust pipelines |
+| **— Core Libraries —** | | |
+| [candle](https://github.com/huggingface/candle) | HuggingFace's minimalist Rust ML framework; GPU support, WASM-ready, no Python dependency | Rust-native ML inference |
+| [async-openai](https://github.com/64bit/async-openai) | Async Rust client for OpenAI API; idiomatic, type-safe | OpenAI API client |
+| [ollama-rs](https://github.com/pepperoni21/ollama-rs) | Async Rust client for the Ollama API | Local model client |
 
 ---
 
