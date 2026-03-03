@@ -11,8 +11,9 @@
 1. [Local Agents](#1-local-agents)
    1. [Coding Agents & IDE Extensions](#coding-agents--ide-extensions)
    2. [Autonomous Agents](#autonomous-agents)
-   3. [Audio / Voice Agents](#audio--voice-agents)
-   4. [General-Purpose Local Agents](#general-purpose-local-agents)
+   3. [AI Browsers](#ai-browsers)
+   4. [Audio / Voice Agents](#audio--voice-agents)
+   5. [General-Purpose Local Agents](#general-purpose-local-agents)
 2. [Libraries & Frameworks](#2-libraries--frameworks)
    1. [Python](#python)
    2. [JavaScript / TypeScript](#javascript--typescript)
@@ -57,6 +58,8 @@
 | [Tabby](https://github.com/TabbyML/tabby) | Self-hosted | VS Code / JetBrains / Vim | ✅ Self-hosted | Self-hosted coding assistant server |
 | [Fauxpilot](https://github.com/fauxpilot/fauxpilot) | Self-hosted | VS Code (Copilot compat) | ✅ Self-hosted | Open-source GitHub Copilot alternative |
 | [Void](https://github.com/voideditor/void) | IDE Fork | VS Code | ✅ Native | Open-source Cursor alternative |
+| [Warp](https://www.warp.dev/) | AI Terminal | Terminal | ✅ Local + Cloud | AI-native terminal with natural language commands, agent mode, and team sharing |
+| [Warp Oz](https://www.warp.dev/oz) | Autonomous Agent | Terminal | ✅ Cloud | Warp's autonomous terminal agent; runs multi-step tasks end-to-end with full shell context |
 | [Plandex](https://github.com/plandex-ai/plandex) | CLI Agent | Terminal | ✅ OpenAI-compat | Long-running terminal agent for complex tasks |
 | [SWE-agent](https://github.com/princeton-nlp/SWE-agent) | CLI Agent | Terminal | ✅ Via API | Autonomous GitHub issue solver |
 | [OpenHands (OpenDevin)](https://github.com/All-Hands-AI/OpenHands) | Web + CLI | Browser / Terminal | ✅ OpenAI-compat | Full autonomous software engineering agent |
@@ -91,6 +94,15 @@ Full autonomous agents that can plan, act, use tools, and run 24/7 without const
 | [OpenFang](https://www.openfang.sh/) | Agent OS: 7 autonomous capability packages, 16 security layers, 40 channel adapters, 30 pre-built agents, MCP & A2A | Rust | Self-hosted |
 | [NullClaw](https://github.com/nullclaw/nullclaw) | Fastest, smallest autonomous AI assistant infra; hybrid host + WASM, edge-optimised | Zig | Self-hosted |
 | [ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw) | Fast, small autonomous AI assistant infra; deploy anywhere, hot-swap any component | Rust | Self-hosted |
+
+### AI Browsers
+
+| Tool | Description | Platform |
+|------|-------------|----------|
+| [Perplexity Comet](https://www.perplexity.ai/comet) | Perplexity's AI-native browser with built-in search intelligence and agentic web interaction | Web / Desktop |
+| [Dia](https://www.diabrowser.com/) | AI browser from The Browser Company (makers of Arc); chat with tabs, write, learn, shop with privacy controls | macOS |
+| [Browserbase](https://www.browserbase.com/) | Serverless cloud browser infrastructure for AI agents; Playwright, Puppeteer, Selenium at scale with stealth mode | Cloud / API |
+| [ChatGPT Atlas](https://chatgpt.com/atlas/) | OpenAI's agentic interface for web-aware tasks and autonomous browsing within ChatGPT | Web |
 
 ### General-Purpose Local Agents
 
@@ -142,6 +154,7 @@ Full autonomous agents that can plan, act, use tools, and run 24/7 without const
 | [anthropic](https://github.com/anthropics/anthropic-sdk-python) | Official Anthropic Python SDK | Claude API client |
 | [google-genai](https://github.com/googleapis/python-genai) | Official Google Gen AI Python SDK for Gemini models | Gemini API client |
 | [google-adk](https://pypi.org/project/google-adk/) | Google Agent Development Kit Python package | Google ADK agents |
+| [llm](https://github.com/simonw/llm) | CLI tool + Python library for running prompts against any LLM; extensible via plugins (Ollama, Claude, Gemini, etc.) | CLI / scripting |
 
 ### JavaScript / TypeScript
 
@@ -205,6 +218,7 @@ Full autonomous agents that can plan, act, use tools, and run 24/7 without const
 | [candle](https://github.com/huggingface/candle) | HuggingFace's minimalist Rust ML framework; GPU support, WASM-ready, no Python dependency | Rust-native ML inference |
 | [async-openai](https://github.com/64bit/async-openai) | Async Rust client for OpenAI API; idiomatic, type-safe | OpenAI API client |
 | [ollama-rs](https://github.com/pepperoni21/ollama-rs) | Async Rust client for the Ollama API | Local model client |
+| [aichat](https://github.com/sigoden/aichat) | All-in-one Rust CLI with shell integration, RAG, agents, and 20+ LLM providers | CLI / scripting |
 
 ---
 
@@ -339,6 +353,7 @@ Optimized for personal hardware — laptops, workstations, or edge devices.
 | [Open Interpreter](https://github.com/KillianLucas/open-interpreter) | Locally running implementation of OpenAI's Code Interpreter; executes code in the terminal | llama.cpp, Ollama | ✅ Terminal |
 | [bitnet.cpp](https://github.com/microsoft/BitNet) | Official inference framework for 1-bit LLMs (BitNet b1.58); fast lossless CPU inference | CPU (NPU/GPU coming) | ❌ |
 | [PowerInfer](https://github.com/SJTU-IPADS/PowerInfer) | CPU/GPU inference engine exploiting neuron activation locality for faster inference | CUDA + CPU | ❌ |
+| [exo](https://github.com/exo-explore/exo) | Distributed inference engine that clusters multiple devices (macOS, Linux) into a single GPU for running frontier models | Metal, CUDA | ✅ Dashboard |
 
 ### Server / Production
 
@@ -413,6 +428,8 @@ Tools that are useful across multiple categories or don't fit neatly into a sing
 | [llmfit](https://github.com/AlexsJones/llmfit) | Rust TUI/CLI that scans your hardware and shows which models from 100+ providers will fit and run on it | ![Stars](https://img.shields.io/github/stars/AlexsJones/llmfit?style=flat-square) | MIT |
 | [llm-checker](https://github.com/Sunwood-ai-labs/llm-checker) | Python CLI that scans hardware (Apple Silicon, NVIDIA, AMD, Intel Arc), scores compatible models on quality/speed/fit, Ollama integration + built-in MCP server | ![Stars](https://img.shields.io/github/stars/Sunwood-ai-labs/llm-checker?style=flat-square) | MIT |
 | [selfhostllm](https://github.com/erans/selfhostllm) | Web calculator estimating GPU memory requirements and max concurrent requests for self-hosted LLM inference | ![Stars](https://img.shields.io/github/stars/erans/selfhostllm?style=flat-square) | MIT |
+| [gitingest](https://github.com/coderamp-labs/gitingest) | Converts any GitHub repo into a single prompt-friendly text dump; replace "hub" with "ingest" in any GitHub URL | ![Stars](https://img.shields.io/github/stars/coderamp-labs/gitingest?style=flat-square) | MIT |
+
 
 ---
 
