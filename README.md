@@ -368,6 +368,7 @@ Persistent, long-term, and working memory systems for AI agents.
 | [R2R (Retrieval to Reasoning)](https://github.com/SciPhi-AI/R2R) | Production-ready RAG + memory system with knowledge graphs | Hybrid | ✅ |
 | [ReMemory](https://github.com/agentscope-ai/reme) | Memory Management Kit for agents; compacts history, writes summaries to file, semantic recall via MemorySearch | File + Semantic | ✅ |
 | [supermemory](https://github.com/supermemoryai/supermemory) | Personal AI second brain; fast, scalable memory engine and application | Second Brain | ✅ |
+| [Tree Ring Memory](https://github.com/TerminallyLazy/Tree-Ring-Memory) | Local-first Rust CLI for agent memory lifecycle: recall, forgetting, audit, consolidation | SQLite + FTS | ✅ |
 | [memU](https://github.com/NevaMind-AI/memU) | Open-source memory framework for AI companions and persona-driven agents | Persona Memory | ✅ |
 | [quivr](https://github.com/StanGirard/quivr) | Open-source RAG framework that acts as your generative AI second brain | Second Brain | ✅ |
 
