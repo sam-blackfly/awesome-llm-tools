@@ -597,6 +597,7 @@ Tools that are useful across multiple categories or don't fit neatly into a sing
 | [heretic](https://github.com/p-e-w/heretic) | Fully automatic censorship removal for language models | ![Stars](https://img.shields.io/github/stars/p-e-w/heretic?style=flat-square) | MIT |
 | [llama-swap](https://github.com/mostlygeek/llama-swap) | Reliable model swapping for local OpenAI compatible servers | ![Stars](https://img.shields.io/github/stars/mostlygeek/llama-swap?style=flat-square) | MIT |
 | [outlines](https://github.com/dottxt-ai/outlines) | Structured outputs and generation control for LLMs | ![Stars](https://img.shields.io/github/stars/dottxt-ai/outlines?style=flat-square) | Apache-2.0 |
+| [Open Agent Relay](https://github.com/ShakespeareLabs/open-agent-relay) | Local-first CLI for relaying bounded Claude Code, Codex, or automation capabilities over a trusted LAN | ![Stars](https://img.shields.io/github/stars/ShakespeareLabs/open-agent-relay?style=flat-square) | Apache-2.0 |
 
 
 ---
