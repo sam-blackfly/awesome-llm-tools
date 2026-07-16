@@ -348,6 +348,7 @@ Tools and techniques for managing, compressing, and optimizing the LLM context w
 | [Context Caching (Gemini)](https://cloud.google.com/vertex-ai/generative-ai/docs/context-cache/context-cache-overview) | Reuse prompt prefixes across requests to reduce latency + cost | Caching |
 | [claude-context-mode](https://github.com/mksglu/claude-context-mode) | Stops context loss from large outputs; smart snippets, fuzzy search, progressive throttling, subagent routing for Claude | Context Management |
 | [LMCache](https://github.com/LMCache/LMCache) | KV Cache sharing layer; share and reuse KV caches across requests for faster inference and higher throughput | Caching |
+| [KV Cache Store](https://kvcachestore.com/) | Hosted registry + open-source Rust CLI for verifying, quantizing, and sharing KV-cache artifacts between LLM inference runs; cuts prefill cost/latency for RAG and long-context prompts | Caching |
 | [GPTCache](https://github.com/zilliztech/GPTCache) | A Library for Creating Semantic Cache for LLM Queries to reduce costs | Semantic Caching |
 
 ---
