@@ -452,6 +452,7 @@ Optimized for personal hardware — laptops, workstations, or edge devices.
 | [OpenLLM](https://github.com/bentoml/OpenLLM) | Open-source platform for deploying and operating LLMs in production via BentoML | Multiple | ✅ Web |
 | [msty](https://msty.app/) | Simple, clean desktop app for running local and online AI models side-by-side | llama.cpp | ✅ Native |
 | [Open Interpreter](https://github.com/KillianLucas/open-interpreter) | Locally running implementation of OpenAI's Code Interpreter; executes code in the terminal | llama.cpp, Ollama | ✅ Terminal |
+| [Off Grid AI Desktop](https://github.com/off-grid-ai/off-grid-ai-desktop) | Private local-first macOS desktop app: LLM chat, on-device image gen, voice dictation, personal memory/RAG; nothing leaves the machine | llama.cpp | ✅ Native |
 | [bitnet.cpp](https://github.com/microsoft/BitNet) | Official inference framework for 1-bit LLMs (BitNet b1.58); fast lossless CPU inference | CPU (NPU/GPU coming) | ❌ |
 | [PowerInfer](https://github.com/SJTU-IPADS/PowerInfer) | CPU/GPU inference engine exploiting neuron activation locality for faster inference | CUDA + CPU | ❌ |
 | [exo](https://github.com/exo-explore/exo) | Distributed inference engine that clusters multiple devices (macOS, Linux) into a single GPU for running frontier models | Metal, CUDA | ✅ Dashboard |
