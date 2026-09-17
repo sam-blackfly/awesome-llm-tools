@@ -370,6 +370,7 @@ Persistent, long-term, and working memory systems for AI agents.
 | [supermemory](https://github.com/supermemoryai/supermemory) | Personal AI second brain; fast, scalable memory engine and application | Second Brain | ✅ |
 | [memU](https://github.com/NevaMind-AI/memU) | Open-source memory framework for AI companions and persona-driven agents | Persona Memory | ✅ |
 | [quivr](https://github.com/StanGirard/quivr) | Open-source RAG framework that acts as your generative AI second brain | Second Brain | ✅ |
+| [Screenpipe](https://github.com/screenpipe/screenpipe) ![Stars](https://img.shields.io/github/stars/screenpipe/screenpipe?style=flat-square) | Retrieves locally captured screen text and audio history for agents through MCP/API. | Work history | Local capture; [source-available commercial license](https://github.com/screenpipe/screenpipe/blob/main/LICENSE.md) |
 
 ---
 
