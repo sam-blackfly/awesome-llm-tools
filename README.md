@@ -180,6 +180,7 @@ Full autonomous agents that can plan, act, use tools, and run 24/7 without const
 | [Speecht5 (HuggingFace)](https://github.com/microsoft/SpeechT5) | Microsoft's unified speech-text pre-training framework | ✅ | ASR + TTS |
 | [Vapi](https://vapi.ai/) | Voice AI platform for building low-latency conversational agents with natural speech | ❌ Cloud | API / Voice |
 | [Retell AI](https://www.retellai.com/) | Real-time conversational AI for developers to build natural-sounding voice agents | ❌ Cloud | API / Voice |
+| [AI Group Call](https://aigroupcall.app) | An AI council you can talk to: a group voice call where agents riff with each other, answer when named, and yield when you speak. | - | - |
 
 ### General-Purpose Local Agents
 
