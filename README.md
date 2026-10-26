@@ -327,6 +327,7 @@ Tools for systematic prompt engineering, evaluation, and automated optimization.
 | [TextGrad](https://github.com/zou-group/textgrad) | Automatic differentiation through text for prompt/system optimization | Gradient-based |
 | [DeepEval](https://github.com/confident-ai/deepeval) | Unit testing framework for LLMs; test-driven development for RAG & agents | Evaluation |
 | [Giskard](https://github.com/Giskard-AI/giskard) | Open-source testing framework for LLMs and ML models; automated red-teaming | Evaluation |
+| [Speakeasy control plane](https://www.speakeasy.com/) | Identity-enriched agent telemetry and MCP tool-call audit logs | Monitoring |
 
 ---
 
