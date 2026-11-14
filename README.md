@@ -561,6 +561,7 @@ Frameworks and tools for fine-tuning, alignment, and PEFT methods.
  | [HumanEval](https://github.com/openai/human-eval) | OpenAI's benchmark for evaluating code generation |
  | [SWE-bench](https://github.com/princeton-nlp/SWE-bench) | Evaluation for software engineering agents on real GitHub issues |
  | [LiveCodeBench](https://livecodebench.github.io/leaderboard.html) | Holistic and contamination-free evaluation of LLMs for code |
+ | [AIHOT Model Leaderboard](https://aihot.news/leaderboard) | Chinese-language model comparison using independently measured benchmark results and documented scoring |
  
  ---
  
