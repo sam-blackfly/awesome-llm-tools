@@ -85,6 +85,7 @@
 | [Jules](https://jules.google/) | Async Agent | GitHub | ❌ Cloud (Gemini) | Google's async coding agent; works in the background on GitHub issues |
 | [Browser-Use](https://github.com/browser-use/browser-use) | Browser Agent | Browser | ✅ OpenAI-compat | Enable AI to control your browser; web automation agent |
 | [Neovim + llm.nvim](https://github.com/huggingface/llm.nvim) | Plugin | Neovim | ✅ Native | HuggingFace's Neovim LLM plugin |
+| [Mel](https://www.openmel.dev) | AI Terminal | Terminal / VS Code | ✅ BYOK (multi-model) | Proprietary multi-agent AI terminal; free with your own API key; Pro from $20/mo |
 
 ### Autonomous Agents
 
