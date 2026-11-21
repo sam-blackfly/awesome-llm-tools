@@ -250,6 +250,7 @@ Full autonomous agents that can plan, act, use tools, and run 24/7 without const
 | [Vercel AI SDK](https://github.com/vercel/ai) | Full-stack AI toolkit for Next.js / React | AI-powered web UIs |
 | [GenKit (Firebase)](https://github.com/firebase/genkit) | Google's framework for production AI flows in JS/TS | Firebase / Google Cloud apps |
 | [Bee Agent Framework](https://github.com/i-am-bee/bee-agent-framework) | IBM's open-source TypeScript agent framework | Enterprise TypeScript agents |
+| [xmcp](https://github.com/basementstudio/xmcp) | Build MCP servers with file-based tools, resources, and prompts | Exposing TypeScript tools to AI clients |
 | **Core Libraries** |
 | [openai](https://github.com/openai/openai-node) | Official OpenAI Node.js / TypeScript SDK | OpenAI API client |
 | [anthropic](https://github.com/anthropics/anthropic-sdk-typescript) | Official Anthropic TypeScript SDK | Claude API client |
